@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html.lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eaf7e63fe2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="personal-images\utsav-sharma-high-resolution-logo-transparent3.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p><span>Aspiring <br>Software Engineer</span> </p>
+            <h1>Hi, I am <br> <span>Utsav Sharma</span></h1>
+        </div>
+    </div>
+</div>
+<!-- ------About------- -->
+<div id="About">
+    <div class="container4">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="personal-images/Pfp1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1><br>
+                <p>Hi there! I am <span>Utsav Sharma</span>, a final year Computer Science student specializing in 
+                CS-IoT at IES IPS Academy, Indore, graduating in 2024.</p><br>
+
+                <p>My expertise spans web development, machine learning, data analysis, and data science.
+                 I am passionate about crafting practical solutions by merging cutting-edge tech with a problem-solving mindset.</p><br>   
+                
+                <p>I am actively seeking an opportunity to leverage My skills to contribute to the success of a dynamic organization.
+                With a strong academic foundation and a passion for continuous learning, 
+                I am eager to apply my skills and contribute to projects that drive innovation and deliver impactful results.</p><br>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"><span>Skills</span></p>
+                    <p class="tab-links" onclick="opentab('experience')"><span>Experience</span></p>
+                    <p class="tab-links" onclick="opentab('education')"><span>Education</span></p>
+                    <p class="tab-links" onclick="opentab('achievements')"><span>Achievements</span></p>
+                    <p class="tab-links" onclick="opentab('profiles')"><span>CodeFolio</span></p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python3, C/C++, JavaScript, PHP, SQL, R, MATLAB, Java</li><br>
+                        <li><span>Machine Learning, AI, and Data Analysis/Data Science</span><br>Scikit-Learn, NumPy, Pandas, Matplotlib, SQL, PyTorch, Transformers, NLTK/NLP, TensorFlow, Pyttsx3, OpenCV, GPT, BERT </li><br>
+                        <li><span>Web Development</span><br>HTML5, CSS3, JavaScript, React.js, Django, Flask, Node.js, SQL, MySQL, Firebase</li><br>
+                        <li><span>Other Tools and Technologies</span><br>Selenium, Arduino, LaTeX, Wordpress, Git</li><br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Amazon ML Summer School 2023</span><br>Participated in Amazon's Machine Learning Summer School From September 2023 To October 2023, gaining insights into cutting-edge ML techniques and realworld
+                            applications. Acquired hands-on experience through practical workshops and learned from industry experts.<br> <a href="https://drive.google.com/file/d/1mEhPjFmcE8RmqSIRc7Xyc1stdCYNi5uL/view?usp=sharing" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a></li><br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>CSE-IOT, B.Tech</span><br>IES IPS Academy, Indore (M.P.)<br>2020-2024<br> Current CGPA - 8.61</li><br>
+                        <li><span>Class 10</span><br>Kendriya Vidyalaya, Shivpuri (M.P.)<br>2017<br>CGPA - 8.6</li><br>
+                        <li><span>Class 12</span><br>Happy Days School, Shivpuri (M.P.)<br>2020<br>Percentage - 65.2%</li><br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="achievements">
+                    <ul class="certificates">
+                        <li><a href="https://courses.skillsbuild.skillsnetwork.site/certificates/d41cc954c0404274956a62edcf0109fb" target="_blank" class="certificate-list"> Data Science 101 By IBM 
+                            <i class="fa-solid fa-up-right-from-square icon"></i>
+                          </a>
+                        </li><br>
+                        <li>
+                          <a href="https://drive.google.com/file/d/1mEhPjFmcE8RmqSIRc7Xyc1stdCYNi5uL/view?usp=drive_link" target="_blank" class="certificate-list"> Amazon ML Summer School 2023
+                              <i class="fa-solid fa-up-right-from-square icon"></i>
+                          </a>
+                        </li><br>
+                        <li>
+                          <a href="https://www.hackerrank.com/certificates/54704cce0263" target="_blank" class="certificate-list"> Python Certification By HackerRank
+                            <i class="fa-solid fa-up-right-from-square icon"></i>
+                          </a>
+                        </li><br>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1PI4maOZ3j7Sp0sgdFSEZYl0ErCdIRjas/view?usp=drive_link" target="_blank" class="certificate-list"> Arduino Training Certificate By SpokenTutorial
+                            <i class="fa-solid fa-up-right-from-square icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="profiles">
+                    <ul class="certificates">
+                        <li class="codeprofiles">
+                        <a href="https://www.codingninjas.com/studio/profile/SearingShot" target="_blank" class="profilenames"> Coding Ninjas/CodeStudios
+                        <i class="fa-solid fa-up-right-from-square icon" ></i>
+                        </a><br><br>
+                        <a href="https://auth.geeksforgeeks.org/user/utsv52u1" target="_blank" class="profilenames"> GeeksForGeeks
+                        <i class="fa-solid fa-up-right-from-square icon" ></i>
+                        </a><br><br>
+                        <a href="https://www.hackerrank.com/profile/utsv27" target="_blank" class="profilenames"> HackerRank
+                        <i class="fa-solid fa-up-right-from-square icon" ></i><br>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------Projects------
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1><br>
+        <div class="projects-lists">
+            <div>
+                <i class="fa-brands fa-searchengin"></i>
+                <h2>Sentiment Analysis</h2>
+                <p>Conducted sentiment analysis on Amazon reviews using VADER sentiment analysis, RoBERTa model, and Hugging Face
+                Transformers.</p>
+                <a href="https://github.com/SearingShot/Sentiment_analysis.git" target="_blank"><i class="fa-brands fa-github"></i><span class="icon-space"></span><i class="fa-solid fa-file-code"></i></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-microphone-lines"></i>
+                <h2>Voice Assistant</h2>
+                <p>Developed a functional voice assistant that utilized speech recognition and natural language processing (NLP) techniques
+                    to understand and respond to user commands.</p>
+                <a href="#" target="_blank"><i class="fa-brands fa-github"></i><span class="icon-space"></span><i class="fa-solid fa-file-code"></i></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Portfolio Website</h2>
+                <p>Developed a fully responsive Personal Portfolio Website, Which showcases my technical skills, projects, and experiences
+                 in software development, machine learning, and web technologies.</p>
+                <a href="#" target="_blank"><i class="fa-brands fa-github"></i><span class="icon-space"></span><i class="fa-solid fa-file-code"></i></a>
+            </div>
+            <div>
+                <i class="fa-brands fa-whatsapp"></i>
+                <h2>WhatsApp Automation Using Selenium</h2>
+                <p>Developed a Python-based automation script utilizing Selenium to efficiently send multiple messages, including photos
+                and videos, on WhatsApp, optimizing communication processes.</p>
+                <a href="https://github.com/SearingShot/WhatsApp_Automation.git" target="_blank"><i class="fa-brands fa-github"></i><span class="icon-space"></span><i class="fa-solid fa-file-code"></i></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-comments"></i>
+                <h2>NoMoreDoubts - Q&A Platform</h2>
+                <p>Led the development of 'NoMoreDoubts,' a collaborative knowledge-sharing platform, 
+                facilitating inclusive interactions and problem-solving across diverse domains.</p>
+                <a href="#" target="_blank"><i class="fa-brands fa-github"></i><span class="icon-space"></span><i class="fa-solid fa-file-code"></i></a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- ------portfolio------ -->
+<div id="portfolio">
+    <div class="container3">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="Projects-list">
+            <div class="project">
+                <img src="personal-images/SentimentAnalysis1.jpg">
+                <div class="layer">
+                    <h3>Sentiment Analysis</h3>
+                    <p>Conducted sentiment analysis on Amazon reviews using VADER sentiment analysis, RoBERTa model, and Hugging Face
+                    Transformers.</p>
+                    <a href="https://github.com/SearingShot/Sentiment_analysis.git" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="personal-images/VoiceAssistant (2).jpg">
+                <div class="layer">
+                    <h3>Voice Assistant</h3>
+                    <p>Developed a functional voice assistant that utilized speech recognition and natural language processing (NLP) techniques
+                    to understand and respond to user commands.</p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="personal-images/Portfolio.jpg">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>Developed a fully responsive Personal Portfolio Website, Which showcases my technical skills, projects, and experiences
+                    in software development, machine learning, and web technologies.</p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="personal-images/whatsapp_automation.jpg">
+                <div class="layer">
+                    <h3>WhatsApp Automation Using Selenium</h3>
+                    <p>Developed a Python-based automation script utilizing Selenium to efficiently send multiple messages, including photos
+                    and videos, on WhatsApp, optimizing communication processes.</p>
+                    <a href="https://github.com/SearingShot/WhatsApp_Automation.git" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="personal-images/NoMoreDoubts.jpg">
+                <div class="layer">
+                    <h3>NoMoreDoubts - Q&A Platform</h3>
+                    <p>Led the development of 'NoMoreDoubts,' a collaborative knowledge-sharing platform, 
+                    facilitating inclusive interactions and problem-solving across diverse domains.</p>
+                    <a href="https://github.com/SearingShot/No-More-Doubts" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/SearingShot" class="btn">Explore Projects</a>
+    </div>
+</div>
+<!-- ------Contact------- -->
+<div id="contact">
+    <div class="container2">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> utsv27@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i> +91-7477021499</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/utsav-sharma-680aa124a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/SearingShot" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/ishu27sharma/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="personal-images/UtsavSharmaLatexUpdatedResume.pdf" download class="btn btn2"><span style="margin-right: 6px; font-size: 19px;"><i class="fa-solid fa-download"></i></span>Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2023 Utsav Sharma. All Rights Reserved. <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+
+    var Sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        Sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        Sidemenu.style.right ="-270px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxLsFpvcVJL10ThLASe9qFRNQ0U07caMzD_gQmD7Bf-7ERPK5GceVKYDMKQQrCJ_5Mh/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Succesfully!!!!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
