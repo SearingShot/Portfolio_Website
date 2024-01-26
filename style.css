@@ -47,6 +47,11 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    transition: color 0.5s, transform 0.5s;
+}
+nav ul li a:hover{
+    color: #289fd6dc;
+    transform: translateX(-10px);
 }
 nav ul li a::after{
     content: '';
@@ -64,6 +69,7 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+    color: #cbe8f5dc;
 }
 /* .header-text p span{
     color: #cae6f3dc;
@@ -71,10 +77,14 @@ nav ul li a:hover::after{
 .header-text h1{
     font-size: 60px;
     margin-top: 10px;
+    color: #cbe8f5dc;
 }
 .header-text h1 span{
-    /* color: hwb(202 0% 0%); */
-    color: #50b6e6dc;
+    background-image: url(personal-images/tryit.gif);
+    background-size: contain;
+    /* background-position: center; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* -----About----- */
@@ -98,13 +108,18 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 .sub-title{
+    color: #cae6f3dc;
     font-size: 60px;
     font-weight: 600;
-    color: #cae6f3dc;
+    background-image: url(personal-images/giphy.gif);
+    background-size: contain;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 .tab-titles{
-    display: flex;
     margin: 20px 0 40px;
+    list-style: none;
 }
 .tab-links{
     margin-right: 50px;
@@ -112,6 +127,10 @@ nav ul li a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    margin-top: 10px;
+    padding:0 0 0;
+    display: list-item;
+    list-style: none;   
 }
 .tab-links::after{
     content: '';
@@ -120,18 +139,19 @@ nav ul li a:hover::after{
     background:hwb(180 0% 0% / 0.616);
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: -5px;
     transition: 0.5s;
 }
 .tab-links.active-link::after{
-    width: 50%;
+    width: 15%;
 }
 .about-col-2 span{
     color:#88c8e6dc;
 }
 .tab-contents ul li{
-    list-style: none;
-    margin: 0 0;
+    /* list-style: none; */
+    margin: 10 0 0 0;
+    margin-top: 12px;
 }
 .tab-contents ul li span{
     color:#09a3ebdc;
@@ -147,9 +167,9 @@ nav ul li a:hover::after{
 .tab-contents{
     display:none;
 }
-.certificates{
+/* .certificates{
     padding-left: 20px;
-}
+} */
 .certificate-list {
     margin-bottom: 10px; 
     position: relative;
@@ -166,6 +186,7 @@ nav ul li a:hover::after{
 .codeprofiles{
     margin-bottom: 10px;
     position: relative;
+    display: list-item;
 }
 .profilenames{
     text-decoration: none; 
@@ -173,13 +194,17 @@ nav ul li a:hover::after{
     color: #d6eff5dc; 
     margin-left: 5px;
 }
-
 .tab-contents.active-tab{
     display: block;
 }
 .tab-links span{
     color:#81d2f8dc;
     font-weight: 520;
+    transition: color 0.5s, transform 0.5s;
+}
+.tab-links span:hover{
+    color: #05fcfc;
+    transform: translateX(-10px);
 }
 /* --------Projects--------
 #projects{
@@ -384,7 +409,7 @@ nav .fa-solid{
         margin-top: 10px;
     }
     .container{
-        padding:auto;
+        padding: auto;
     }
     .header-text{
         margin-top: 100%;
@@ -392,7 +417,7 @@ nav .fa-solid{
         /* margin-left: -30px; */
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 35px;
     }
     nav{
         display: flex;
@@ -462,12 +487,9 @@ nav .fa-solid{
         /* margin-right: 15%; */
         justify-content: center;
     }
-    /* .Projects-list{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
-        grid-gap: 50px;
-        margin-top: 50px;   
-    } */
+    .Projects-list{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  
+    }
     .contact-left, .contact-right{
         flex-basis: 100%;
         /* box-sizing: border-box; */
